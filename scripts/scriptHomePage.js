@@ -19,11 +19,11 @@ document.getElementById("open-sidebar").addEventListener("click", function () {
     }
 })
 
-document.getElementById("lupa-search").addEventListener("click", function () {
-    var input = document.querySelector(".main-header-search input");
-    var lupinha = document.getElementById("lupa-search");
-    input.focus();
-})
+// document.getElementById("lupa-search").addEventListener("click", function () {
+//     var input = document.querySelector(".main-header-search input");
+//     var lupinha = document.getElementById("lupa-search");
+//     input.focus();
+// })
 
 // document.querySelector("#subMenu").addEventListener("click", function () {
 //     let abrir = document.querySelector(".sub-menu li")

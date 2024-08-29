@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grafite: #25282A;
+    --white: #fff;
+    --cereja: #C21233;
+    --black: #000;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: var(--grafite);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+
+}
+
+header .header-logo {
+    width: 150px;
+}
+
+header .header-logo img {
+    width: 100%;
+}
+
+header #menuDesk-ul {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+
+header #menuDesk-ul li a {
+    color: var(--white);
+    display: flex;
+    text-decoration: none;
+}
+
+header .account {
+    border: 1px solid var(--white);
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+header .account p {
+    font-size: .9em;
+}
+
+header .account p span {
+    font-size: .7em;
+    text-transform: uppercase;
+}
+
+header .account {
+    position: relative;
+}
+
+header .account span img {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+#submenu {
+    position: absolute;
+    background-color: var(--grafite);
+    top: 55px;
+    left: -30px;
+    padding: 20px;
+    border-radius: 20px;
+    /* display: block; */
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+#submenu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: cente;
+}
+
+#submenu a {
+    color: var(--white);
+    display: flex;
+    text-decoration: none;
+}
+
+main {
+    height: calc(100% - 60px);
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+
+}
+
+.caixa {
+    width: 200px;
+    height: 300px;
+    background-color: blue;
+    margin: auto;
+    flex-grow: 1;
+}
+
+.caixa:nth-child(odd) {
+    background-color: rgb(177, 128, 128);
+}

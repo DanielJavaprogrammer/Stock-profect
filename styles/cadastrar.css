@@ -1,0 +1,15 @@
+#cadastrar:after {
+    content: " ";
+    width: 80px;
+    height: 2px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 100%;
+    left: 77%;
+    margin-top: 5px;
+    background: linear-gradient(to right, rgb(64, 64, 114), rgb(201, 63, 63), rgb(146, 219, 212));
+}
+
+#menuDesk-ul {
+    position: relative;
+}

@@ -9,3 +9,22 @@ document.querySelector("header .account span img").addEventListener("click", fun
     }
 
 })
+
+//mostrar menu lateral
+document.getElementById("showMenu").addEventListener("click", function () {
+    var menuMoba = document.getElementById("menuMobile");
+
+    if (menuMoba.style.display != "block") {
+        menuMoba.style.display = "block";
+    } else {
+        menuMoba.style.display = "none";
+    }
+})
+
+//fechar menu lateral
+document.getElementById("icon-close").addEventListener("click", function () {
+    var menu = document.getElementById("menuMobile");
+    if (menu.style.display != "none") {
+        menu.style.display = "none";
+    }
+})

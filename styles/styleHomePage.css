@@ -221,6 +221,7 @@ main {
     color: #b9b9b9;
 }
 
+/* icone do menu mobile oculto enquanto para desktop */
 #showMenu {
     display: none;
 }

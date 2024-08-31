@@ -28,3 +28,14 @@ document.getElementById("icon-close").addEventListener("click", function () {
         menu.style.display = "none";
     }
 })
+
+// Evento de redimensionamento da tela
+window.addEventListener("resize", function () {
+    var menuMoba = document.getElementById("menuMobile");
+    var screenWidth = window.innerWidth;
+
+    // Se a largura da tela for maior que 747px, esconder o menu mobile
+    if (screenWidth > 747 && menuMoba.style.display == "block") {
+        menuMoba.style.display = "none";
+    }
+});

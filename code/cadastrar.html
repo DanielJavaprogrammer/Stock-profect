@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../styles/styleHomePage.css">
     <link rel="stylesheet" href="../styles/cadastrar.css">
     <title>Inventario | Danygor</title>
 </head>
@@ -19,26 +18,20 @@
         <nav id="menuDesk">
             <ul id="menuDesk-ul">
                 <li>
-                    <a href="../code/inventario.html" id="inventario">
+                    <a href="../code/inventario.html">
                         Inventário
                     </a>
                 </li>
                 <li>
-                    <a href="../code/cadastrar.html" id="cadastrar">
+                    <a href="#">
                         Adicionar novo
                     </a>
                 </li>
                 <li>
-                    <a href="../code/relatorios.html" id="relatorio">
+                    <a href="#">
                         Relatórios
                     </a>
                 </li>
-                <!-- <li>
-                    <a href="#">
-                        Opção 4
-                    </a>
-                </li> -->
-
             </ul>
         </nav>
         <div class="account">
@@ -66,51 +59,48 @@
                 </ul>
             </div>
         </div>
-        <div class="logo-menu" id="showMenu">
-            <img src="../assets/icons/menu-icon.svg" alt="menu-icon">
-        </div>
-
-        <div id="menuMobile">
-            <div class="icon-close" id="icon-close">
-                <img src="../assets/icons/close-icon.svg" alt="closebuton">
-            </div>
-            <ul>
-                <li>
-                    <a href="#">
-                        Produtos
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Adicionar novo
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Relatórios
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Configurações
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Sair
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Ajuda
-                    </a>
-                </li>
-            </ul>
-        </div>
     </header>
 
    <main>
+    <main>
+        <div class="header">
+            <h1>Adicionar novo item</h1>
+        </div>
+        <div class="formulario-cadastro">
+            <form>
+                <label>Nome do produto <span style="color: red;">*</span></label>
+                <input type="text" name="nomeProduto" id="nomeProduto">
+                <label>Codigo do produto</label>
+                <input type="text" name="codigoProduto" id="codigoProduto">
+                <label>Marca</label>
+                <input type="text" name="marca" id="marca">
 
+                <label>Unidade</label>
+                <input type="number" name="tipoPeso" id="tipoPeso">
+                <label>Valor de venda</label>
+                <input type="number" name="valorVenda" id="valorVenda">
+                <label>Valor de custo</label>
+                <input type="number" name="valorCusto" id="valorCusto">
+
+                <label>Peso -em Kg</label>
+                <input type="number" name="peso" id="peso">
+
+                <label>Tamanho do produto</label>
+
+                <label>Origem de produto</label>
+
+                <label>Tipo de classificaçã</label>
+
+                <label>Situação</label>
+
+                <label>Fornecedor</label>
+
+                <label>Codigo de Barras interno</label>
+
+                <label>observações</label>
+            </form>
+        </div>
+    </main>
    </main>
 
     <script src="../scripts/scriptHomePage.js"></script>

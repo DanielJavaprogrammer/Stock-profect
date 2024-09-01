@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/cadastrar.css">
     <title>Inventario | Danygor</title>
 </head>
@@ -23,7 +24,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../code/cadastrar.html">
                         Adicionar novo
                     </a>
                 </li>
@@ -61,47 +62,131 @@
         </div>
     </header>
 
-   <main>
     <main>
         <div class="header">
             <h1>Adicionar novo item</h1>
         </div>
         <div class="formulario-cadastro">
-            <form>
-                <label>Nome do produto <span style="color: red;">*</span></label>
-                <input type="text" name="nomeProduto" id="nomeProduto">
-                <label>Codigo do produto</label>
-                <input type="text" name="codigoProduto" id="codigoProduto">
-                <label>Marca</label>
-                <input type="text" name="marca" id="marca">
+            <form id="formulario-dadosProduto" action="cadastro_produto.php" method="post">
 
-                <label>Unidade</label>
-                <input type="number" name="tipoPeso" id="tipoPeso">
-                <label>Valor de venda</label>
-                <input type="number" name="valorVenda" id="valorVenda">
-                <label>Valor de custo</label>
-                <input type="number" name="valorCusto" id="valorCusto">
+                <div class="section-form">
+                    <label for="produtoNome">Nome do produto <span style="color: red;">*</span></label>
+                    <input type="text" name="nomeProduto" id="produtoNome">
+                </div>
 
-                <label>Peso -em Kg</label>
-                <input type="number" name="peso" id="peso">
+                <div class="section-form">
+                    <label for="produtoCodigo">Código do produto <span style="color: red;">*</span></label>
+                    <input type="text" name="codigoProduto" id="produtoCodigo" placeholder="P001">
+                </div>
 
-                <label>Tamanho do produto</label>
+                <div class="section-form">
+                    <label for="produtoMarca">Marca</label>
+                    <input type="text" name="marcaProduto" id="produtoMarca" placeholder="Nome do Fabricante">
+                </div>
 
-                <label>Origem de produto</label>
+                <div class="section-form">
+                    <label for="produtoUnidade">Unidade</label>
+                    <input type="text" name="unidadeProduto" id="produtoUnidade" placeholder="Ex: Pç, Kg, Un">
+                </div>
 
-                <label>Tipo de classificaçã</label>
+                <div class="section-form">
+                    <label for="vendaValor">Valor de venda</label>
+                    <input type="text" name="valorVenda" id="vendaValor" placeholder="R$ 200,00">
+                </div>
 
-                <label>Situação</label>
+                <div class="section-form">
+                    <label for="custoValor">Valor de custo</label>
+                    <input type="text" name="valorCusto" id="custoValor" placeholder="R$ 120,00">
+                </div>
 
-                <label>Fornecedor</label>
+                <div class="section-form">
+                    <label for="produtoPeso">Peso - em Kg <span style="color: red;">*</span></label>
+                    <input type="number" name="pesoProduto" id="produtoPeso" placeholder="Bruto">
+                </div>
 
-                <label>Codigo de Barras interno</label>
+                <div class="section-form">
+                    <label for="produtoTamanho">Tamanho do produto</label>
+                    <input type="number" name="tamanhoProduto" id="produtoTamanho">
+                </div>
 
-                <label>observações</label>
+                <div class="section-form">
+                    <label for="produtoOrigem">Origem do produto</label>
+                    <select name="origemProduto" id="produtoOrigem">
+                        <option value="1" selected>0 - Nacional</option>
+                        <option value="2">1 - Estados Unidos</option>
+                    </select>
+                </div>
+
+                <div class="section-form">
+                    <label for="classificacaoTipo">Tipo de classificação <span style="color: red;">*</span></label>
+                    <select name="tipoClassificacao" id="classificacaoTipo">
+                        <option value="Livro" selected>Livro</option>
+                        <option value="BayaAtHome">Baya At Home</option>
+                        <option value="LogBook">LogBook</option>
+                        <option value="Agenda">Agenda</option>
+                    </select>
+                </div>
+
+                <div class="section-form">
+                    <label for="produtoSituacao">Situação</label>
+                    <select name="situacaoProduto" id="produtoSituacao">
+                        <option value="Ativo" selected>Ativo</option>
+                        <option value="Inativo">Inativo</option>
+                    </select>
+                </div>
+
+                <div class="section-form">
+                    <label for="produtoFornecedor">Fornecedor</label>
+                    <input type="text" name="fornecedorProduto" id="produtoFornecedor">
+                </div>
+
+                <div class="section-form">
+                    <label for="codigoBarrasInterno">Código de Barras interno <span style="color: red;">*</span></label>
+                    <input type="number" name="codigoBarrasInterno" id="codigoBarrasInterno">
+                </div>
+
+                <div class="section-form observacao">
+                    <label for="produtoObservacoes">Observações</label>
+                    <textarea name="observacoesProduto" id="produtoObservacoes"></textarea>
+                </div>
+
+                <div class="formulario-estoque ">
+                        <h1>Estoque</h1>
+        
+                        <div class="formulario-input ">
+                            <div class="section-form">
+                                <label for="Idquantidade">Quantidade</label>
+                                <input type="number" name="quantidade" id="Idquantidade" required>
+                            </div>
+                            <div class="section-form">
+                                <label for="localEstoque">Localização do Estoque</label>
+                                <input type="text" name="estoqueLocal" id="localEstoque" placeholder="Ex: Sala A16">
+                            </div>
+                        </div>
+                </div>
+
+                <div class="formularioFotos">
+                    <h1>Fotos <span>(opcional)</span></h1>
+
+                    <label for="imagemProduto section-foto">
+                        Selecione o Arquivo
+                        <input type="file" name="produtoImagem" id="imagemProsuto">
+                    </label>
+                    <p>Máximo 2MB: JPG, JPEG, PNG.</p>
+                </div>
+
+                <div class="formulario-envio">
+                    <button id="btnEnviar" type="submit" value="enviar">Cadastrar</button>
+                    <button id="btnCancelar" type="submit" value="cancelar">Cancelar</button>
+                </div>
             </form>
         </div>
     </main>
-   </main>
+
+    <footer>
+        <img src="../assets/logos/logo_Danygor.png" alt="lgodanigor"> 
+        <p>Danygor © 2024. Todos os direitos reservados.</p>
+    </footer>
 
     <script src="../scripts/scriptHomePage.js"></script>
 </body>

@@ -21,7 +21,7 @@ document.getElementById("sendBtn").addEventListener("click", function (event) {
         event.preventDefault(); // Impede o envio do formulário
     } else {
         alert("Acesso autorizado!");
-        location.href = "https://produto.mercadolivre.com.br/MLB-1537459490-varal-em-aco-dobravel-20-metros-cabo-aco-encapado-_JM?variation=56831026753#reco_item_pos=9&reco_backend=machinalis-homes-pdp-boos&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=f204047f-58b4-4b5e-9d9d-07cca66fdfd0&c_id=/home/navigation-recommendations/element&c_element_order=10&c_uid=e0823609-be92-4e7c-943a-dd778a6413b7";
+        // location.href = "https://produto.mercadolivre.com.br/MLB-1537459490-varal-em-aco-dobravel-20-metros-cabo-aco-encapado-_JM?variation=56831026753#reco_item_pos=9&reco_backend=machinalis-homes-pdp-boos&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=f204047f-58b4-4b5e-9d9d-07cca66fdfd0&c_id=/home/navigation-recommendations/element&c_element_order=10&c_uid=e0823609-be92-4e7c-943a-dd778a6413b7";
         // O redirecionamento para a página home.html deve ocorrer aqui
     }
 });

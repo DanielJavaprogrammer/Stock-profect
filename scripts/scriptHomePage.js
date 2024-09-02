@@ -39,3 +39,14 @@ window.addEventListener("resize", function () {
         menuMoba.style.display = "none";
     }
 });
+
+//submenu de inventário aparece
+document.getElementById("seta-icon").addEventListener("mouseover", function () {
+    var submenuInventario = document.getElementById("inventario-sub-menu");
+    submenuInventario.style.display = "flex";
+})
+
+document.getElementById("inventario-sub-menu").addEventListener("mouseleave", function () {
+    this.style.display = "none";
+});
+

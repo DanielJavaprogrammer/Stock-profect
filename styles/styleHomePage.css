@@ -112,6 +112,11 @@ header .account span img {
     color: #b9b9b9;
 }
 
+/* Fim do Header */
+
+/* ---------------\\---------------- */
+
+/* Inicio do Main */
 main {
     height: calc(100% - 90px);
     /* height: 100vh; */

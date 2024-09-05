@@ -41,12 +41,15 @@ header #menuDesk-ul {
     display: flex;
     list-style-type: none;
     gap: 40px;
+    position: relative;
 }
 
 header #menuDesk-ul li a {
     color: var(--white);
     display: flex;
     text-decoration: none;
+    align-items: center;
+    gap: 5px;
 }
 
 header #menuDesk-ul li a:hover {
@@ -82,6 +85,30 @@ header .account span img {
     cursor: pointer;
 }
 
+#inventario-sub-menu {
+    position: absolute;
+    top: 50px;
+    left: -20px;
+    list-style: none;
+    background-color: var(--grafite);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    font-size: .8rem;
+
+}
+
+#inventario-sub-menu li a {
+    padding: 20px;
+}
+
+#seta-icon {
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
 #submenu {
     position: absolute;
     background-color: var(--grafite);
@@ -110,6 +137,75 @@ header .account span img {
 
 #submenu a:hover {
     color: #b9b9b9;
+}
+
+#menuMobile {
+    min-height: 100vh;
+    background-color: var(--grafite);
+    width: 250px;
+    left: calc(100% - 250px);
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+#menuMobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    list-style: none;
+    padding-top: 70px;
+}
+
+#menuMobile ul a {
+    color: var(--white);
+    text-decoration: none;
+
+}
+
+#menuMobile ul a:hover {
+    color: #b9b9b9;
+}
+
+/*icone do menu mobile oculto enquanto para desktop */
+#showMenu {
+    display: none;
+}
+
+#icon-close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 747px) {
+    header #menuDesk-ul {
+        display: none;
+    }
+
+    .account {
+        display: none;
+    }
+
+    #showMenu {
+        display: block;
+        cursor: pointer;
+    }
+
+    main {
+        padding-block: 20px;
+    }
+
+    main:after {
+        content: " ";
+        width: 100px;
+        height: .5px;
+        background-color: var(--white);
+    }
+
 }
 
 /* Fim do Header */

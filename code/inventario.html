@@ -116,13 +116,66 @@
     </header>
 
     <main>
-        <div class="inventario-didatico">
-            
-        </div>
-    
-        <div class="inventario-mobilia">
+        <section id="botaoAdicionar">
+            <button><a href="../code/createLogin.html">
 
-        </div>
+                    <img src="../assets/icons/plus-sign.svg" alt="sinal de mais">
+                    <p>Adicionar Item</p>
+                </a></button>
+        </section>
+
+        <section class="inventario-options">
+            <div class="inventario-didatico">
+                <div class="text">
+                    <p>Materiais Didáticos</p>
+                    <button id="btn-dialog-didatico">Veja os itens</button>
+                    <dialog>
+                        <ul>
+                            <li>Livros didáticos</li>
+                            <li>Kit Baya</li>
+                            <li>Agendas</li>
+                            <li>Fichários</li>
+                            <li>Mochilas </li>
+                        </ul>
+                        <button id="btn-dialog-close-didatico" class="btn-fechar-dialogo">Ok</button>
+                    </dialog>
+                </div>
+
+                <div class="inventario-figuras">
+                    <div class="inventario-figuras-img">
+                        <img src="../assets/icons/material-didatico.png" alt="imagem livros">
+                    </div>
+
+                    <div class="inventario-seta">
+                        <a href="#"><img src="../assets/icons/arrow-right.svg" alt="Seta para direita"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="inventario-mobilia">
+                <div class="text">
+                    <p>Estoque de Mobilia</p>
+                    <button id="btn-dialog-mobilia">Veja os itens</button>
+                    <dialog id="dialogoMobilia">
+                        <ul>
+                            <li>Cadeiras de aluno</li>
+                            <li>Mesas de aluno</li>
+                            <li>Mesas de professor</li>
+                            <li>Móveis de sala</li>
+                        </ul>
+                        <button id="btn-dialog-close-mobilia" class="btn-fechar-dialogo">Ok</button>
+                    </dialog>
+                </div>
+
+                <div class="mobilia-figuras">
+                    <div class="mobilia-figuras-img">
+                        <img src="../assets/icons/mesa-mobilia.png" alt="mesa png">
+                    </div>
+                    <div class="inventario-seta">
+                        <a href="#"><img src="../assets/icons/arrow-right.svg" alt="Seta para direita"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="../scripts/scriptHomePage.js"></script>
 </body>

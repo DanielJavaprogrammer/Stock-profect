@@ -50,3 +50,29 @@ document.getElementById("inventario-sub-menu").addEventListener("mouseleave", fu
     this.style.display = "none";
 });
 
+//mostrar Caixa de Dialogo Didatico
+document.querySelector("#btn-dialog-didatico").addEventListener("click", function () {
+    var dialogoShow = document.querySelector("dialog");
+    dialogoShow.showModal();
+})
+
+//Fechar Caixa de Dialogo Didatico
+document.querySelector("#btn-dialog-close-didatico").addEventListener("click", function () {
+    var dialogoClose = document.querySelector("dialog");
+    dialogoClose.close();
+})
+
+
+//mostrar Caixa de Dialogo Mobilia
+document.querySelector("#btn-dialog-mobilia").addEventListener("click", function () {
+    var dialogoShow = document.querySelector("#dialogoMobilia");
+    dialogoShow.showModal();
+})
+
+//Fechar Caixa de Dialogo Mobilia
+document.querySelector("#btn-dialog-close-mobilia").addEventListener("click", function () {
+    var dialogoClose = document.querySelector("#dialogoMobilia");
+    dialogoClose.close();
+})
+
+

@@ -35,7 +35,7 @@ header h1 {
 
 main {
     background-color: #25282a;
-    min-height: calc(100vh - 70px);
+    min-height: 100%;
     font-family: "Poppins";
     display: flex;
     justify-content: center;

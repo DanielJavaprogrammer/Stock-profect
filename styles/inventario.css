@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --salmao_claro: #f0f4fa;
+    --white: #fff;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--salmao_claro);
+    font-family: 'Poppins';
+}
+
+header {
+    background-color: blueviolet;
+    width: 100%;
+}
+
+main {
+    background-color: var(--white);
+    max-width: 80%;
+    margin: 20px auto;
+    min-height: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.botaoVoltar:hover {
+    background-color: rgba(211, 211, 211, 0.231);
+    max-width: 90px;
+}
+
+.container .botaoVoltar a {
+    padding: 5px;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container .botaoVoltar a img {
+    width: 20px;
+}
+
+.filtro {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+
+.fitro-item {
+    flex: 1;
+    flex-basis: 25%;
+    background-color: rgba(255, 0, 0, 0.603);
+    text-align: center;
+    min-width: 200px;
+}
+
+.fitro-item:nth-child(odd) {
+    background-color: aquamarine;
+}
+
+.fitro-item img {
+    width: 100%;
+    height: auto;
+}

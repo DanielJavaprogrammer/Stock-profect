@@ -7,6 +7,7 @@
 :root {
     --salmao_claro: #f0f4fa;
     --white: #fff;
+    --black: #000;
 }
 
 body {
@@ -19,6 +20,11 @@ body {
 header {
     background-color: blueviolet;
     width: 100%;
+}
+
+.aviso p span {
+    font-size: .7rem;
+    font-style: italic;
 }
 
 main {
@@ -49,26 +55,3 @@ main {
     width: 20px;
 }
 
-.filtro {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: blanchedalmond;
-    padding: 10px;
-}
-
-.fitro-item {
-    flex: 1;
-    flex-basis: 25%;
-    background-color: rgba(255, 0, 0, 0.603);
-    text-align: center;
-    min-width: 200px;
-}
-
-.fitro-item:nth-child(odd) {
-    background-color: aquamarine;
-}
-
-.fitro-item img {
-    width: 100%;
-    height: auto;
-}

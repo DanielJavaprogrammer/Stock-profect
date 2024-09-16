@@ -8,6 +8,7 @@
     --salmao_claro: #f0f4fa;
     --white: #fff;
     --black: #000;
+    --cereja: #C21233;
 }
 
 body {
@@ -27,13 +28,18 @@ header {
     font-style: italic;
 }
 
+.aviso{
+    margin-bottom: 20px;
+}
+
 main {
     background-color: var(--white);
     max-width: 80%;
     margin: 20px auto;
     min-height: 100%;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
+
 }
 
 .botaoVoltar:hover {
@@ -55,3 +61,37 @@ main {
     width: 20px;
 }
 
+/* 
+.filtro{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} */
+
+.fitro-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border-top-right-radius: 20px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: #ececec50;
+}
+
+.item-img img {
+    width: 90px;
+}
+
+.item-botao a {
+    background-color: var(--cereja);
+    display: block;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    border-top-right-radius: 20px;
+}

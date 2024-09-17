@@ -61,13 +61,6 @@ main {
     width: 20px;
 }
 
-/* 
-.filtro{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-} */
-
 .fitro-item {
     display: flex;
     justify-content: space-between;
